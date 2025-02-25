@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przychodnia</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="panel">
+                <h2>Nasza Misja</h2>
+                <p>Witamy w przychodni marzeń. Tylko u nas zostaniesz dokładnie przebadany i tylko u nas nikogo nie odsyłamy bez postawienia diagnozy</p>
+            </div>
+            <div class="panel">
+                <h2>Twoje Badania</h2>
+                <ul>
+                    <li>USG</li>
+                    <li>RTG</li>
+                    <li>DVD</li>
+                </ul>
+            </div>
+            <div class="panel">
+                <h2>Umów wizytę</h2>
+                <form action="#" method="post">
+                    <table>
+                        <tr>
+                            <td><label for="doctor">Wybierz lekarza:</label></td>
+                            <td>
+                                <select id="doctor" name="doctor" required>
+                                    <option value="Harold">Harold</option>
+                                    <option value="House">House</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone">Telefon:</label></td>
+                            <td><input type="tel" id="phone" name="phone" pattern="[0-9]{9}" placeholder="Wprowadź 9-cyfrowy numer telefonu" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="date">Data wizyty:</label></td>
+                            <td><input type="date" id="date" name="date" value="2024-05-10" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="sms">Powiadomienie SMS:</label></td>
+                            <td><input type="checkbox" id="sms" name="sms" checked></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;"><input type="submit" value="Umów wizytę"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="panel">
+                <h2>Twoi Lekarze</h2>
+                <div class="doctors-container">
+                    <div class="doctor">
+                        <img src="hide-pain-harold.jpg" alt="Lekarz 1">
+                        <figcaption>
+                            <p>Wyleczę ból</p>
+                            <blockquote>Harold</blockquote>
+                        </figcaption>
+                    </div>
+                    <div class="doctor">
+                        <img src="dr-jakub-burski.jpg" alt="Lekarz 2">
+                        <figcaption>
+                            <blockquote>To rak!</blockquote>
+                            <p>- Burski</p>
+                        </figcaption>
+                    </div>
+                    <div class="doctor">
+                        <img src="house-md.jpg" alt="Lekarz 3">
+                        <figcaption>
+                            <blockquote>To koniec</blockquote>
+                            <p>- House</p>
+                        </figcaption>
+                    </div>
+                    <div class="doctor">
+                        <img src="kardiolog.jpg" alt="Lekarz 4">
+                        <figcaption>
+                            <blockquote>Serce nie bije</blockquote>
+                            <p>- Kardiolog</p>
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
